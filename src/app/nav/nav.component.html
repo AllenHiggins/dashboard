@@ -1,0 +1,42 @@
+<div>
+  <div class="leftLogo">
+    <div class="toggleSideNavIcon">
+      <i class="fas fa-bars"></i>
+    </div>
+    <h5>DASHBOARD</h5>
+  </div>
+  <nav>
+    <ul id="mainNav">
+      <li >
+        <input type="text"
+          placeholder="search..."
+          (focus)="isFocus = true"
+          (blur)="isFocus = false"
+          [ngClass]="{'Infoc': isFocus}"
+        />
+        <button
+          (click)="isFocus = false"
+          [ngClass]="{'Infoc': isFocus}"><i class="fas fa-search"></i></button>
+      </li>
+      <li>
+          <i class="fas fa-chart-line"></i>
+      </li>
+      <li (click)="toggleInnerOptions()">
+        <i class="fas fa-globe-americas"></i>
+        <i class="fas fa-caret-up"></i>
+        <ul
+          id="innerOptions"
+          *ngIf="innerOptions">
+          <i class="fas fa-caret-up"></i>
+          <li>Action</li>
+          <li>Another Action</li>
+          <li>Something else here</li>
+        </ul>
+      </li>
+      <li>
+          <i class="far fa-user"></i>
+      </li>
+    </ul>
+  </nav>
+  <div class="toggleTopNav"><i class="fas fa-ellipsis-v"></i></div>
+</div>

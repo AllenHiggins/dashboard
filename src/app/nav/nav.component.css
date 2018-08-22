@@ -1,0 +1,131 @@
+i:hover{
+  cursor: pointer;
+}
+
+.leftLogo{
+  position: absolute;
+  top: 17px;
+}
+
+#mainNav{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: #ffffff;
+}
+#mainNav li{
+  display: inline;
+  padding: 10px 15px 10px 15px;
+}
+
+#mainNav li:first-child:hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+#mainNav li:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.27);
+  border-radius: 2px;
+}
+
+#innerOptions{
+  width: 170px;
+  position: absolute;
+  background-color: #ffffff;
+  color: #9E9E9E;
+  right: 48px;
+  top: 50px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+#innerOptions li{
+  display: block;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+#innerOptions li:hover{
+  cursor: pointer;
+  background-color: #e8e8e8;
+}
+
+#innerOptions i{
+  float: left;
+  margin-left: 150px;
+  margin-top: -12px;
+  font-size: 18px;
+  color: white;
+}
+
+.toggleSideNavIcon{
+  position: absolute;
+  top: 4px;
+  color: #ffffff;
+  left: 10px;
+  font-size:20px;
+}
+
+h5{
+  position: absolute;
+  top: 13px;
+  left: 33px;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.toggleTopNav{
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  color: #ffffff;
+  width: 20px;
+  text-align: center;
+}
+
+.toggleTopNav:hover{
+  cursor: pointer;
+}
+
+button, input{
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.27);
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+input{
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 212px;
+}
+
+input::placeholder{
+  color: rgba(255, 255, 255, 0.59);
+  font-size: 12px;
+}
+
+button{
+  padding-right: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Infoc{
+  background-color: rgba(255, 255, 255, 0.38);
+}
+
+input:hover{
+  cursor: initial;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.fa-caret-up,
+.fa-caret-down{
+  margin-left: 12px;
+  font-size: 12px;
+}
