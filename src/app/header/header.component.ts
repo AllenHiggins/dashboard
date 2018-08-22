@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BigDataService } from '../Services/big-data.service';
 
 @Component({
   selector: 'app-header',
@@ -9,11 +10,11 @@ export class HeaderComponent implements OnInit {
   data = [];
   labels = [];
 
-  constructor() { }
+  constructor(private bigDataService: BigDataService) { }
 
   ngOnInit() {
-    this.data = [50, 100, 150, 190, 130, 90, 150, 160, 120, 140, 190, 95];
     this.labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    this.data = this.bigDataService.getBigData();
   }
 
 }

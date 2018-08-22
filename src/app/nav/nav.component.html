@@ -9,7 +9,7 @@
     <ul id="mainNav">
       <li >
         <input type="text"
-          placeholder="search..."
+          placeholder="Search..."
           (focus)="isFocus = true"
           (blur)="isFocus = false"
           [ngClass]="{'Infoc': isFocus}"
@@ -23,7 +23,7 @@
       </li>
       <li (click)="toggleInnerOptions()">
         <i class="fas fa-globe-americas"></i>
-        <i class="fas fa-caret-up"></i>
+        <i class="fas" [ngClass]="{'fa-caret-up': innerOptions, 'fa-caret-down': !innerOptions}"></i>
         <ul
           id="innerOptions"
           *ngIf="innerOptions">

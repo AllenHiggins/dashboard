@@ -2,11 +2,6 @@ i:hover{
   cursor: pointer;
 }
 
-.leftLogo{
-  position: absolute;
-  top: 17px;
-}
-
 #mainNav{
   position: absolute;
   top: 20px;
@@ -57,18 +52,23 @@ i:hover{
   color: white;
 }
 
+.leftLogo{
+  position: absolute;
+  top: 17px;
+}
+
 .toggleSideNavIcon{
   position: absolute;
   top: 4px;
   color: #ffffff;
-  left: 10px;
+  padding-left: 10px;
   font-size:20px;
 }
 
 h5{
   position: absolute;
   top: 13px;
-  left: 33px;
+  margin-left: 33px;
   color: #ffffff;
   font-weight: 100;
   font-size: 12px;
