@@ -1,6 +1,6 @@
-<section id="header">
-  <app-side-nav></app-side-nav>
-  <app-nav></app-nav>
+<section
+  id="header"
+  [ngClass]="{'Extend': moveToFull === true, 'Notextend': moveToFull === false}">
   <div id="bigBash">
     <app-chart
       id="bigDashBoard"

@@ -1,4 +1,6 @@
-<section id="sideNav">
+<section
+  id="sideNav"
+  [ngClass]="{'LeftNavOut': isPressed === true, 'LeftNavIn': isPressed === false }">
   <h3>CT CREATIVE TIM</h3>
   <hr>
   <nav>
@@ -36,6 +38,11 @@
       <li>
         <div>
           <div><i class="fas fa-lira-sign"></i>TYPOGRAPHY</div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div><i class="fas fa-cloud-download-alt"></i>UPGRADE TO PRO</div>
         </div>
       </li>
     </ul>

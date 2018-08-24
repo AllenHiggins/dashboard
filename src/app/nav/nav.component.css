@@ -1,3 +1,8 @@
+#navtop{
+  background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
+  height: 100px;
+}
+
 i:hover{
   cursor: pointer;
 }
@@ -63,6 +68,7 @@ i:hover{
   color: #ffffff;
   padding-left: 10px;
   font-size:20px;
+  display: none;
 }
 
 h5{
@@ -81,6 +87,7 @@ h5{
   color: #ffffff;
   width: 20px;
   text-align: center;
+  display: none;
 }
 
 .toggleTopNav:hover{
@@ -128,4 +135,20 @@ button:hover{
 .fa-caret-down{
   margin-left: 12px;
   font-size: 12px;
+}
+
+
+
+/* devices (992px and below) */
+@media only screen and (max-width: 992px) {
+
+  .toggleTopNav,
+  .toggleSideNavIcon{
+    display: block;
+  }
+
+  #mainNav{
+    display: none;
+  }
+
 }

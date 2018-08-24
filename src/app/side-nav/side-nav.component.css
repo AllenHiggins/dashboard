@@ -33,7 +33,13 @@ li > div{
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 40px;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+li:last-child{
+  position: absolute;
+  bottom: 20px;
+  width: 85%;
 }
 
 li > div:hover{
@@ -46,12 +52,44 @@ li > div > div{
 }
 
 li > div > div > i{
-  font-size: 20px;
-  padding-right: 15px;
+  font-size: 17px;
+  padding-right: 30px;
   opacity: .6;
+  width: 10px;
 }
 
 .active{
   background-color: #fff;
   color: #ff5724;
+}
+
+
+.LeftNavOut{
+  animation-name: navout;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navout {
+  from { left: 0}
+  to { left: -250px }
+}
+
+.LeftNavIn{
+  animation-name: navin;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navin {
+  from { left: -250px}
+  to { left: 0px }
+}
+
+
+/* Large devices (laptops/desktops, 992px and below) */
+@media only screen and (max-width: 992px) {
+  #sideNav{
+    left: -250px;
+  }
 }

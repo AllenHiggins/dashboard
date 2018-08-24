@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { BigDataService } from './Services/big-data.service';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { MainSectionComponent } from './main-section/main-section.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     ChartComponent,
     HeaderComponent,
     NavComponent,
-    SideNavComponent
+    SideNavComponent,
+    MainSectionComponent
   ],
   imports: [
     BrowserModule,

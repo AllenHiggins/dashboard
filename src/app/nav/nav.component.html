@@ -1,7 +1,9 @@
-<div>
+<div
+  id="navtop"
+  [ngClass]="{'Extend': pressedLeft === true, 'Notextend': pressedLeft === false}">
   <div class="leftLogo">
     <div class="toggleSideNavIcon">
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" (click)="toggleleftnav()"></i>
     </div>
     <h5>DASHBOARD</h5>
   </div>
