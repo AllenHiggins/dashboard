@@ -8,6 +8,7 @@ import { NavComponent } from './nav/nav.component';
 import { BigDataService } from './Services/big-data.service';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MainSectionComponent } from './main-section/main-section.component';
+import { EventsService } from './Services/events.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { MainSectionComponent } from './main-section/main-section.component';
   imports: [
     BrowserModule,
   ],
-  providers: [BigDataService],
+  providers: [BigDataService, EventsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

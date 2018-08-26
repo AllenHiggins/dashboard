@@ -1,14 +1,23 @@
 <div
   id="navtop"
+  [style.background]="topNavPresed ? 'white' : ''"
   [ngClass]="{'Extend': pressedLeft === true, 'Notextend': pressedLeft === false}">
+
+
+
   <div class="leftLogo">
     <div class="toggleSideNavIcon">
-      <i class="fas fa-bars" (click)="toggleleftnav()"></i>
+      <i class="fas fa-bars" (click)="toggleleftnav()"
+      [style.color]="topNavPresed ? 'grey' : ''"></i>
     </div>
-    <h5>DASHBOARD</h5>
+    <h5 [style.color]="topNavPresed ? 'grey' : ''">DASHBOARD</h5>
   </div>
+
+
+
   <nav>
-    <ul id="mainNav">
+    <ul id="mainNav"
+    [ngClass]="{'Extend': pressedLeft === true, 'Notextend': pressedLeft === false, 'topNavToggleDown': topNavPresed === true}">
       <li >
         <input type="text"
           placeholder="Search..."
@@ -21,24 +30,26 @@
           [ngClass]="{'Infoc': isFocus}"><i class="fas fa-search"></i></button>
       </li>
       <li>
-          <i class="fas fa-chart-line"></i>
+          <i class="fas fa-chart-line"><div class="text">STATS</div ></i>
       </li>
       <li (click)="toggleInnerOptions()">
-        <i class="fas fa-globe-americas"></i>
-        <i class="fas" [ngClass]="{'fa-caret-up': innerOptions, 'fa-caret-down': !innerOptions}"></i>
+        <i class="fas fa-globe-americas"><div class="text">SOME ACTIONS</div></i>
+        <i class="tip fas" [ngClass]="{'fa-caret-up': innerOptions, 'fa-caret-down': !innerOptions}"></i>
         <ul
           id="innerOptions"
           *ngIf="innerOptions">
-          <i class="fas fa-caret-up"></i>
+          <i class="fas fa-caret-up" ></i>
           <li>Action</li>
           <li>Another Action</li>
           <li>Something else here</li>
         </ul>
       </li>
       <li>
-          <i class="far fa-user"></i>
+          <i class="far fa-user"><div class="text">ACCOUNT</div></i>
       </li>
     </ul>
   </nav>
-  <div class="toggleTopNav"><i class="fas fa-ellipsis-v"></i></div>
+  <div class="toggleTopNav"
+    (click)="toggelTopNav()"
+    [style.color]="topNavPresed ? 'grey' : ''"><i class="fas fa-ellipsis-v"></i></div>
 </div>

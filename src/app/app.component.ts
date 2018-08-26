@@ -9,6 +9,7 @@ export class AppComponent implements OnInit {
   title = 'app';
 
   ngOnInit() {
+    this.checkWindowWidth('mainNav', 'Extend', 'Notextend');
     this.checkWindowWidth('navtop', 'Extend', 'Notextend');
     this.checkWindowWidth('header', 'Extend', 'Notextend');
     this.checkWindowWidth('main', 'Extend', 'Notextend');
@@ -27,3 +28,4 @@ export class AppComponent implements OnInit {
 
   }
 }
+
