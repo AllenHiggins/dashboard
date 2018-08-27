@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.checkWindowWidth('mainNav', 'Extend', 'Notextend');
     this.checkWindowWidth('navtop', 'Extend', 'Notextend');
-    this.checkWindowWidth('header', 'Extend', 'Notextend');
     this.checkWindowWidth('main', 'Extend', 'Notextend');
     this.checkWindowWidth('sideNav', 'LeftNavOut', 'LefNavIn');
   }

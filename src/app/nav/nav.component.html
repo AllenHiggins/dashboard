@@ -2,21 +2,16 @@
   id="navtop"
   [style.background]="topNavPresed ? 'white' : ''"
   [ngClass]="{'Extend': pressedLeft === true, 'Notextend': pressedLeft === false}">
-
-
-
   <div class="leftLogo">
     <div class="toggleSideNavIcon">
       <i class="fas fa-bars" (click)="toggleleftnav()"
       [style.color]="topNavPresed ? 'grey' : ''"></i>
     </div>
-    <h5 [style.color]="topNavPresed ? 'grey' : ''">DASHBOARD</h5>
+    <h5 [style.color]="topNavPresed ? 'grey' : ''"> {{ title | uppercase }} </h5>
   </div>
-
-
-
   <nav>
     <ul id="mainNav"
+    [style.display]="topNavPresed ? 'block' : ''"
     [ngClass]="{'Extend': pressedLeft === true, 'Notextend': pressedLeft === false, 'topNavToggleDown': topNavPresed === true}">
       <li >
         <input type="text"

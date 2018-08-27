@@ -1,2 +1,11 @@
+#main{
+  position: absolute;
+  right: 0;
+}
 
-
+/* devices (992px and below) */
+@media only screen and (max-width: 992px) {
+  #main{
+    position: relative;
+  }
+}

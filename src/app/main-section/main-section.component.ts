@@ -7,7 +7,7 @@ import { EventsService } from '../Services/events.service';
   styleUrls: ['./main-section.component.css']
 })
 export class MainSectionComponent implements OnInit, OnDestroy {
-  toFull: boolean;
+  toFull = false;
 
   constructor(private eventService: EventsService) { }
 
@@ -15,6 +15,14 @@ export class MainSectionComponent implements OnInit, OnDestroy {
     this.eventService.toggleLeft.subscribe( data => {
       this.toFull = data;
     });
+    this.s();
+    console.log(this.toFull);
+  }
+
+  s() {
+    if ( window.innerWidth < 992 ) {
+      this.toFull = true;
+    }
   }
 
   ngOnDestroy() {

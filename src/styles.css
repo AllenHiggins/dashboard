@@ -1,15 +1,18 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~animate.css/animate.min.css";
 
+body{
+  overflow-x: hidden;
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
-#header,
-#main,
-#navtop{
-  margin-left: 250px;
+#navtop
+{
+   margin-left: 250px;
 }
 
 .Extend{
@@ -20,8 +23,8 @@
 
 
 @keyframes Full {
-  from { margin-left: 250px;}
-  to { margin-left: 0px;}
+  from {left: 250px;}
+  to { left: 0px;}
 }
 
 .Notextend{
@@ -31,8 +34,8 @@
 }
 
 @keyframes Short {
-  from { margin-left: 0px;}
-  to { margin-left: 250px;}
+  from { left: 0px;}
+  to { left: 250px;}
 }
 
 /* devices (992px and below) */

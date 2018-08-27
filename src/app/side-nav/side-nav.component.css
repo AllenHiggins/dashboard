@@ -9,6 +9,7 @@
   color: #fff;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 4;
 }
 
 h3{
@@ -36,12 +37,6 @@ li > div{
   font-size: 10px;
 }
 
-li:last-child{
-  position: absolute;
-  bottom: 20px;
-  width: 85%;
-}
-
 li > div:hover{
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.12);
@@ -61,8 +56,12 @@ li > div > div > i{
 .active{
   background-color: #fff;
   color: #ff5724;
+  outline: none;
 }
 
+li > div.active:hover{
+  background-color: white;
+}
 
 .LeftNavOut{
   animation-name: navout;

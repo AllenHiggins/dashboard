@@ -7,6 +7,7 @@ import { EventsService } from '../Services/events.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  title: string;
   isFocus = false;
   innerOptions = false;
   pressedLeft = true;
@@ -15,6 +16,10 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {
     this.checkWindowWidth();
+
+    // Todo: dynamic title for which links user is on to show in nav ///
+    this.title = 'DASHBOARD';                                        ///
+    ////////////////////////////////////////////////////////////////////
   }
 
   toggleInnerOptions() {
