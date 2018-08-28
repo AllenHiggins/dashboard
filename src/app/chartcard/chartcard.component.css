@@ -1,0 +1,79 @@
+.chartcard{
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 2px 8px 3px #bdbdbd66;
+  padding: 10px;
+}
+
+h6{
+  font-size: 14px;
+  color: rgb(190, 188, 188);
+}
+
+h3{
+  font-size: 22px;
+}
+
+.settingIcon{
+  position: absolute;
+  right: 21px;
+  top: 23px;
+  color: rgb(190, 188, 188);
+  border: 1px solid rgb(190, 188, 188);
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 180px;
+  font-size: 23px;
+}
+
+.settingIcon:hover{
+  cursor: pointer;
+}
+
+.showSettings{
+  color: white;
+  background-color: darkgray;
+}
+
+#settingOptions{
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px -1px grey;
+  width: 162px;
+  height: 172px;
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  right: 51px;
+  top: 75px;
+  padding: 10px 0px 10px 0px;
+}
+
+#settingOptions ul{
+  list-style: none;
+}
+
+#settingOptions ul li{
+  padding: 10px 0px 10px 0px;
+  text-indent: 20px;
+}
+
+#settingOptions ul li:last-child{
+  color:red;
+}
+
+#settingOptions ul li:hover{
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+}
+
+#settingOptions i{
+  position: absolute;
+  right: 10px;
+  color: white;
+  top: -8px;
+  text-shadow: 1px -3px 6px grey;
+}

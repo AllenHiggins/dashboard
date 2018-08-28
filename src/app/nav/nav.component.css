@@ -108,7 +108,7 @@ h5{
   cursor: pointer;
 }
 
-button, input{
+button, input[type=text]{
   color: #ffffff;
   background: rgba(255, 255, 255, 0.27);
   border: none;
@@ -116,14 +116,14 @@ button, input{
   padding: 5px;
 }
 
-input{
+input[type=text]{
   padding-left: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   width: 212px;
 }
 
-input::placeholder{
+input[type=text]::placeholder{
   color: rgba(255, 255, 255, 0.59);
   font-size: 12px;
 }
@@ -138,7 +138,7 @@ button{
   background-color: rgba(255, 255, 255, 0.38);
 }
 
-input:hover{
+input[type=text]:hover{
   cursor: initial;
 }
 button:hover{
@@ -175,9 +175,6 @@ button:hover{
     padding: 20px;
     position: relative;
     max-width: 100%;
-    /* margin: auto; */
-    /* left: 0px;
-    right: 0px; */
     width: 100%;
     margin-top: -10px;
     background-color: white;
@@ -250,16 +247,20 @@ button:hover{
     color: white;
   }
 
-  input, input::placeholder{
+  input[type=text], input[type=text]::placeholder{
     color: #383838;
+    background-color: #e8e8e8;
+    width: 93%;
   }
 
   button{
     color: #b2a9a9;
+    position: absolute;
+    right:50px;
   }
 
   button,
-  input{
+  input[type=text]{
     background-color: #e8e8e8;
   }
 
@@ -285,4 +286,11 @@ button:hover{
   }
 
 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  button{
+    right:32px;
+  }
 }

@@ -1,0 +1,39 @@
+<div class="chartcard">
+  <h6>{{topLabel}}</h6>
+  <h3>{{title}}</h3>
+  <div
+    *ngIf="settingsTab"
+    [ngClass]="{'showSettings': showSettings}"
+    class="settingIcon"
+    (click)="toggleSettings()">
+    <i class="fas fa-cog"></i>
+  </div>
+  <div id="settingOptions" *ngIf="showSettings">
+    <i class="fas fa-caret-up"></i>
+    <ul>
+      <li>Action</li>
+      <li>Another Action</li>
+      <li>Something else here</li>
+      <li>Remove Data</li>
+    </ul>
+  </div>
+  <div>
+    <app-chart
+      [id]=ChartID
+      [chartType]=chartType
+      chartLabel="Data"
+      borderWidth=2
+      [chartData]=data
+      [chartLabels]=labels
+      height=270
+      [backgroundColor]=backgroundColor
+      [borderColor]=borderColor
+      defaultFontColor="rgba(255, 255, 255, 0.6)"
+      radius=4
+      hoverRadius=8
+      stepSize=50
+      tilteDisplay=false
+      labelsFontColor="#000"></app-chart>
+  </div>
+  <h6><i class={{bottomIcon}}></i> {{bottomLabel}}</h6>
+</div>

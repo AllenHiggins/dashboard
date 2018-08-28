@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { BigDataService } from '../Services/big-data.service';
-import { EventsService } from '../Services/events.service';
 
 @Component({
   selector: 'app-header',
@@ -10,14 +9,16 @@ import { EventsService } from '../Services/events.service';
 export class HeaderComponent implements OnInit {
   data = [];
   labels = [];
+  shippingData = [];
+  profarmanceData = [];
 
-  constructor(
-    private bigDataService: BigDataService,
-    private eventService: EventsService) { }
+  constructor(private bigDataService: BigDataService) { }
 
   ngOnInit() {
-    this.labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    this.labels = this.bigDataService.getYearLables();
     this.data = this.bigDataService.getBigData();
+    this.shippingData = this.bigDataService.getShippingData();
+    this.profarmanceData = this.bigDataService.getProformanceData();
   }
 
 }
