@@ -19,6 +19,7 @@ import { TableListComponent } from './table-list/table-list.component';
 import { TypographyComponent } from './typography/typography.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { ChartcardComponent } from './chartcard/chartcard.component';
+import { TaskComponent } from './task/task.component';
 
 const appRoutes: Routes = [
   {path: '', component: HeaderComponent},
@@ -46,7 +47,8 @@ const appRoutes: Routes = [
     TableListComponent,
     TypographyComponent,
     UpgradeComponent,
-    ChartcardComponent
+    ChartcardComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
