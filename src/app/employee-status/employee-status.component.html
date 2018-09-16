@@ -1,0 +1,18 @@
+<div class="employeeStatus">
+  <h6>{{title}}</h6>
+  <h3>{{heading}}</h3>
+  <table>
+    <th>Name</th>
+    <th>County</th>
+    <th>City</th>
+    <th>Salary</th>
+    <tbody>
+      <tr *ngFor="let employee of employeeList" >
+        <td>{{employee.Name}}</td>
+        <td>{{employee.County}}</td>
+        <td>{{employee.City}}</td>
+        <td>{{employee.Salary | currency}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

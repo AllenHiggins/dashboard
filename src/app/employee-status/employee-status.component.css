@@ -1,0 +1,42 @@
+.employeeStatus{
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 2px 8px 3px #bdbdbd66;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+h6{
+  font-size: 14px;
+  color: rgb(190, 188, 188);
+  padding-bottom: 20px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+table {
+  padding-top: 1em;
+  width: 100%;
+
+}
+
+table th{
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #f67b54;
+  font-size: 17px;
+}
+
+table tr td{
+  font-size: 15px;
+  min-height: 54px;
+}
+
+table tr td{
+  padding-bottom: 15px;
+  padding-top:15px;
+  border-top: 1px solid #e9ecef
+}

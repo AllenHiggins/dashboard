@@ -20,6 +20,8 @@ import { TypographyComponent } from './typography/typography.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { ChartcardComponent } from './chartcard/chartcard.component';
 import { TaskComponent } from './task/task.component';
+import { EmployeeStatusComponent } from './employee-status/employee-status.component';
+import { EmployeeService } from './Services/employee.service';
 
 const appRoutes: Routes = [
   {path: '', component: HeaderComponent},
@@ -48,13 +50,14 @@ const appRoutes: Routes = [
     TypographyComponent,
     UpgradeComponent,
     ChartcardComponent,
-    TaskComponent
+    TaskComponent,
+    EmployeeStatusComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [BigDataService, EventsService],
+  providers: [BigDataService, EventsService, EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
