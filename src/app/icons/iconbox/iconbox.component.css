@@ -1,0 +1,18 @@
+.iconbox{
+  background-color: white;
+  width: 108px;
+  height: 147px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+}
+
+i{
+    font-size: 22px;
+    padding: 25px 0px 18px 0px;
+}
+
+p{
+  font-size: 11px;
+  color: lightgray;
+}

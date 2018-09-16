@@ -22,6 +22,8 @@ import { ChartcardComponent } from './chartcard/chartcard.component';
 import { TaskComponent } from './task/task.component';
 import { EmployeeStatusComponent } from './employee-status/employee-status.component';
 import { EmployeeService } from './Services/employee.service';
+import { IconboxComponent } from './icons/iconbox/iconbox.component';
+import { IconsService } from './Services/icons.service';
 
 const appRoutes: Routes = [
   {path: '', component: HeaderComponent},
@@ -51,13 +53,14 @@ const appRoutes: Routes = [
     UpgradeComponent,
     ChartcardComponent,
     TaskComponent,
-    EmployeeStatusComponent
+    EmployeeStatusComponent,
+    IconboxComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [BigDataService, EventsService, EmployeeService],
+  providers: [BigDataService, EventsService, EmployeeService, IconsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

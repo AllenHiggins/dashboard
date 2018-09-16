@@ -1,3 +1,11 @@
-<p>
-  icons works!
-</p>
+<section class="iconList">
+  <h3>100 Awesome Icons Sample</h3>
+  <h6>Hand Crafted By Our <span>Team</span></h6>
+  <ul>
+    <li *ngFor="let data of iconList">
+      <app-iconbox
+      icon={{data.iconClass}}
+      text={{data.text}}></app-iconbox>
+    </li>
+  </ul>
+</section>
