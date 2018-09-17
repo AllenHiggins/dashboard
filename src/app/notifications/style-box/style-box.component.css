@@ -1,0 +1,13 @@
+#stylebox{
+  background-color: white;
+  padding:10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(165, 163, 163, 0.89);
+  margin-top: -15px;
+}
+
+h3{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+

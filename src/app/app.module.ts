@@ -24,6 +24,10 @@ import { EmployeeStatusComponent } from './employee-status/employee-status.compo
 import { EmployeeService } from './Services/employee.service';
 import { IconboxComponent } from './icons/iconbox/iconbox.component';
 import { IconsService } from './Services/icons.service';
+import { StyleBoxComponent } from './notifications/style-box/style-box.component';
+import { AlertBoxComponent } from './notifications/alert-box/alert-box.component';
+import { StatesBoxComponent } from './notifications/states-box/states-box.component';
+import { PlacesBoxComponent } from './notifications/places-box/places-box.component';
 
 const appRoutes: Routes = [
   {path: '', component: HeaderComponent},
@@ -54,7 +58,11 @@ const appRoutes: Routes = [
     ChartcardComponent,
     TaskComponent,
     EmployeeStatusComponent,
-    IconboxComponent
+    IconboxComponent,
+    StyleBoxComponent,
+    AlertBoxComponent,
+    StatesBoxComponent,
+    PlacesBoxComponent
   ],
   imports: [
     BrowserModule,

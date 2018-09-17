@@ -1,0 +1,8 @@
+<div id="alertBox"
+  [ngClass]="{'info': info, 'primary': primary, 'success': success, 'warning': warning, 'danger': danger}" >
+  <ul>
+    <li *ngIf="leftIcon"><i class="far fa-bell"></i></li>
+    <li><p>{{msg}}</p></li>
+    <li *ngIf="rightIcon"><i class="fas fa-times"></i></li>
+  </ul>
+</div>

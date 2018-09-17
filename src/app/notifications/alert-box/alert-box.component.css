@@ -1,0 +1,42 @@
+#alertBox{
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(214, 211, 211, 0.808);
+}
+
+ul{
+  text-align: -webkit-center;
+}
+
+li, i{
+  color: white;
+}
+
+li{
+  display: table-cell;
+  padding: 10px;
+}
+
+p{
+  text-align: center;
+  margin: 0;
+}
+
+.info{
+  background-color: #00a6ff;
+}
+
+.warning{
+  background-color: rgb(219, 185, 110);
+}
+
+.success{
+  background-color: rgb(105, 230, 105);
+}
+
+.primary{
+  background-color: #f07049;
+}
+
+.danger{
+  background-color: rgb(204, 80, 80);
+}

@@ -1,0 +1,22 @@
+#topNotificationHeader{
+  background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
+  height: 205px;
+  text-align: center;
+}
+
+h3{
+  padding-top:1em;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h6{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+span{
+  color: white;
+}
