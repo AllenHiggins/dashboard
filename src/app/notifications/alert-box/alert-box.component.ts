@@ -15,10 +15,27 @@ export class AlertBoxComponent implements OnInit {
   @Input() leftIcon: boolean;
   @Input() rightIcon: boolean;
   @Input() msg: string;
+  hide = false;
+  remove = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  TopNotificationAdd() {
+    this.setTimeDisplay();
+  }
+
+  setTimeDisplay() {
+    // Hide after 2 seconds
+    setTimeout(() => {
+      this.hide = true;
+    }, 2000);
+  }
+
+  close() {
+    this.remove = true;
   }
 
 }

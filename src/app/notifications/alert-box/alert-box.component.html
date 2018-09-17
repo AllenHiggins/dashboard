@@ -1,8 +1,12 @@
-<div id="alertBox"
-  [ngClass]="{'info': info, 'primary': primary, 'success': success, 'warning': warning, 'danger': danger}" >
+<div
+  style="cursor: pointer"
+  class="alertBox"
+  (click)="TopNotificationAdd()"
+
+  [ngClass]="{'info': info, 'primary': primary, 'success': success, 'warning': warning, 'danger': danger, 'hide': hide, 'remove': remove}" >
   <ul>
     <li *ngIf="leftIcon"><i class="far fa-bell"></i></li>
     <li><p>{{msg}}</p></li>
-    <li *ngIf="rightIcon"><i class="fas fa-times"></i></li>
+    <li *ngIf="rightIcon"><i class="fas fa-times" ></i></li>
   </ul>
 </div>

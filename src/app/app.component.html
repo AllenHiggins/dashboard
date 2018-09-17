@@ -1,3 +1,40 @@
 <app-nav></app-nav>
 <app-side-nav></app-side-nav>
 <app-main-section></app-main-section>
+
+<div class="row notices">
+
+  <div class="col-xs-12 col-md-4 noticesT">
+      <ul>
+        <li *ngFor="let num of lTList" (click)="close('TL')">
+          <app-alert-box
+            primary=true
+            msg="Welcome to Now Ui Dashboard Pro - a beautiful freebie for every web developer."
+            rightIcon=true></app-alert-box>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-xs-12 col-md-4 noticesT" >
+        <ul>
+          <li *ngFor="let num of lCList" (click)="close('TC')">
+            <app-alert-box
+              primary=true
+              msg="Welcome to Now Ui Dashboard Pro - a beautiful freebie for every web developer."
+              rightIcon=true></app-alert-box>
+          </li>
+        </ul>
+      </div>
+
+
+    <div class="col-xs-12 col-md-4 noticesT" >
+        <ul>
+          <li *ngFor="let num of lRList" (click)="close('TR')">
+            <app-alert-box
+              primary=true
+              msg="Welcome to Now Ui Dashboard Pro - a beautiful freebie for every web developer."
+              rightIcon=true></app-alert-box>
+          </li>
+        </ul>
+    </div>
+</div>

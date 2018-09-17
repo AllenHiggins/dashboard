@@ -28,6 +28,7 @@ import { StyleBoxComponent } from './notifications/style-box/style-box.component
 import { AlertBoxComponent } from './notifications/alert-box/alert-box.component';
 import { StatesBoxComponent } from './notifications/states-box/states-box.component';
 import { PlacesBoxComponent } from './notifications/places-box/places-box.component';
+import { NotificationsService } from './Services/notifications.service';
 
 const appRoutes: Routes = [
   {path: '', component: HeaderComponent},
@@ -68,7 +69,7 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [BigDataService, EventsService, EmployeeService, IconsService],
+  providers: [BigDataService, EventsService, EmployeeService, IconsService, NotificationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

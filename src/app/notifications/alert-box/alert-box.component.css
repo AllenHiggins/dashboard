@@ -1,6 +1,7 @@
-#alertBox{
+.alertBox{
   border-radius: 3px;
-  box-shadow: 1px 1px 1px 1px rgba(214, 211, 211, 0.808);
+  box-shadow: 1px 2px 1px rgba(255, 254, 254, 0.568);
+  margin-bottom: 20px;
 }
 
 ul{
@@ -39,4 +40,8 @@ p{
 
 .danger{
   background-color: rgb(204, 80, 80);
+}
+
+.hide{
+  display: none;
 }

@@ -2,36 +2,8 @@
   <h3>Notifications Places</h3>
   <h5>Click To View Notifications</h5>
   <div class="row">
-    <div class="col-md-3 col-xs-12">
-
-
-
-
-      <app-alert-box
-          primary=true;
-          msg="Top Center"></app-alert-box>
-
-        <app-alert-box
-          primary=true;
-          msg="Top Right"></app-alert-box>
-
-        <app-alert-box
-          primary=true;
-          msg="Bottom Left"></app-alert-box>
-
-        <app-alert-box
-          primary=true;
-          msg="Bottom Center"></app-alert-box>
-
-        <app-alert-box
-          primary=true;
-          msg="Bottom Right"></app-alert-box>
-
-
-
-
-
-
-    </div>
+      <div (click)="isPressed('TL')" class="col-md-4 col-xs-12"><div class="b">Top Left</div></div>
+      <div (click)="isPressed('TC')" class="col-md-4 col-xs-12"><div class="b">Top Center</div></div>
+      <div (click)="isPressed('TR')" class="col-md-4 col-xs-12"><div class="b">Top Right</div></div>
   </div>
 </div>
